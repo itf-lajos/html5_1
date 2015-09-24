@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta charset="utf-8">
-        
         <!-- CSS fájlok beszúrása. -->
         <link rel="stylesheet" href="css/main.css">
     
@@ -22,35 +21,46 @@
         <section id="section1">
             <!-- Új bejegyzés. -->
             <article>
-                <h1>ITFactory tanfolyam</h1>
-                <p>HTML5 tanfolyam, az<br> ITFactory gondozásában.</p>
-                <img
-                    src="http://www.itfactory.hu/Content/Styles/ITF_NewSkin/img/logo.png"
-                    style="max-width: 100px; border: solid 5px #e0e0e0;"
-                    id="img1"
-                    class="test-images">
+                <h1>Regisztráció</h1>
+                <p>Kérjük adja meg adatait!</p>
+                <!-- Regisztrációs űrlap -->
+                <form method="post" action="http://post.nettuts.hu">
+                    <!-- Email cm -->
+                    <label for="email1">Email cím:</label>
+                    <input type="email" name="email1" id="email1" autofocus>
+                    <br><br>
+                    
+                    <!-- Életkor -->
+                    <label for="bd1">Születési idő:</label>
+                    <input type="date" name="bd1"id="bd1" min="1972-03-27" max="1997-09-01">
+                    <br><br>
+                    
+                    <!-- Kedvenc szín -->
+                    <label for="color1">Kedvenc szín:</label>
+                    <input type="color" name="color1" id="color1">
+                    <br><br>
+
+                    <!-- Fotó -->
+                    <label for="foto1">Profil kép:/label>
+                    <input type="file" name="foto1" id="foto1">
+                    <br><br>
+
+                    <!-- Jelszó -->
+                    <label for="password1">Jelszó:</label>
+                    <input type="password" name="password1" id="password1" maxlength="6">
+                    <br><br>
+                    
+                    <!-- Küldés -->
+                    <input type="submit" value="Regisztrálok">
+                </form>
             </article>
             <div style="height: 1000px;">&nbsp;</div>
         </section>
-        
-        <!-- 2. szekció -->
-        <section id="section2">
-            <!-- Aside elemek. -->
-            <aside style="float: left;">
-                <h3>Oldalra csoportosított elemek</h3>
-            </aside>
-            <aside style="float: left;">
-                <h3>Oldalra csoportosított elemek</h3>
-            </aside>
-        </section>
-        <div style="height: 1000px;">&nbsp;</div>
-        
                 
         <!-- Lábléc elem. -->
         <footer style="position: fixed; left:0; right:0; bottom:0;">
             &copy; Szabó Lajos
         </footer>
-        
         
         <!-- JS fájlok beszúrása -->
         <script src="js/main.js"></script>
