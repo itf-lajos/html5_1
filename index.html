@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <!-- CSS fájlok beszúrása. -->
+        <link rel="stylesheet" href="css/main.css">
+    
+    </head>
+    <body>
+        
+        <!-- Navigáció. -->
+        <nav>
+            <a target="_blank" href="http://origo.hu">Origo</a>
+            <a href="pages/about.html">Rólunk</a>
+            <a href="#section1">1. szekció</a>
+            <a href="#section2">2. szekció</a>
+            <a href="#" onclick="bigSection()">Szekció növelése</a>
+        </nav>
+       
+        <!-- Első szekció. -->
+        <section id="section1">
+            <!-- Új bejegyzés. -->
+            <article>
+                <h1>ITFactory tanfolyam</h1>
+                <p>HTML5 tanfolyam, az<br> ITFactory gondozásában.</p>
+                <img
+                    src="http://www.itfactory.hu/Content/Styles/ITF_NewSkin/img/logo.png"
+                    style="max-width: 100px; border: solid 5px #e0e0e0;"
+                    id="img1"
+                    class="test-images">
+            </article>
+            <div style="height: 1000px;">&nbsp;</div>
+        </section>
+        
+        <!-- 2. szekció -->
+        <section id="section2">
+            <!-- Aside elemek. -->
+            <aside style="float: left;">
+                <h3>Oldalra csoportosított elemek</h3>
+            </aside>
+            <aside style="float: left;">
+                <h3>Oldalra csoportosított elemek</h3>
+            </aside>
+        </section>
+        <div style="height: 1000px;">&nbsp;</div>
+        
+                
+        <!-- Lábléc elem. -->
+        <footer style="position: fixed; left:0; right:0; bottom:0;">
+            &copy; Szabó Lajos
+        </footer>
+        
+        
+        <!-- JS fájlok beszúrása -->
+        <script src="js/main.js"></script>
+    
+    
+    
+    </body>
+</html>
